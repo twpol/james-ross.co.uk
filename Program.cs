@@ -9,7 +9,8 @@ class Program
 {
     static Task<int> Main()
     {
-        return Deployment.RunAsync(() => {
+        return Deployment.RunAsync(() =>
+        {
 
             // Create an Azure Resource Group
             var resourceGroup = new ResourceGroup($"{Deployment.Instance.ProjectName}-{Deployment.Instance.StackName}-");
